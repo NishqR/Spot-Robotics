@@ -1,0 +1,5 @@
+roslaunch spot_config gazebo.launch
+
+roslaunch spot_config navigate.launch rviz:=true
+
+rosrun rqt_image_view rqt_image_view

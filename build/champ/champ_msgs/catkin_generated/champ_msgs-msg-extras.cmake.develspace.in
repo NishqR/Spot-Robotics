@@ -1,0 +1,2 @@
+set(champ_msgs_MESSAGE_FILES "/home/nishq/spot-ws/src/champ/champ_msgs/msg/Velocities.msg;/home/nishq/spot-ws/src/champ/champ_msgs/msg/PID.msg;/home/nishq/spot-ws/src/champ/champ_msgs/msg/Imu.msg;/home/nishq/spot-ws/src/champ/champ_msgs/msg/Point.msg;/home/nishq/spot-ws/src/champ/champ_msgs/msg/PointArray.msg;/home/nishq/spot-ws/src/champ/champ_msgs/msg/Joints.msg;/home/nishq/spot-ws/src/champ/champ_msgs/msg/Contacts.msg;/home/nishq/spot-ws/src/champ/champ_msgs/msg/ContactsStamped.msg;/home/nishq/spot-ws/src/champ/champ_msgs/msg/Pose.msg")
+set(champ_msgs_SERVICE_FILES "")
