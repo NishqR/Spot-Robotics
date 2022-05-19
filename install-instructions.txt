@@ -117,5 +117,6 @@ roslaunch spot_viz view_model.launch
 
 
 
+# Gazebo Simulation - DO NOT run this currently as it is incompatible with the spot_driver to actually run on spot - if you're planning to use gazebo install the packages in a separate VM 
 For the gazebo simulations follow this tutorial - https://www.youtube.com/watch?v=C9quuhNuWIM
 You can skip straight to the 19th minute since it covers all the steps followed above
