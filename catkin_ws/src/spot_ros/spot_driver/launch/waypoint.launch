@@ -1,0 +1,20 @@
+<launch>
+
+    <!-- Move Base -->
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+      <rosparam file="$(find spot_driver)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+      <rosparam file="$(find spot_driver)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+      <rosparam file="$(find spot_driver)/config/local_costmap_params.yaml" command="load" />
+      <rosparam file="$(find spot_driver)/config/global_costmap_params.yaml" command="load" />
+      <rosparam file="$(find spot_driver)/config/trajectory_planner.yaml" command="load" />
+
+      <remap from="cmd_vel" to="/twist_marker_server/cmd_vel"/>
+      <remap from="odom" to="/spot/odometry"/>
+      <remap from="scan" to="/scan"/>
+
+    </node>
+
+    <node name="rosbot_waypoint" pkg="spot_driver" type="waypoint.py" output="screen">
+    </node>
+
+</launch>

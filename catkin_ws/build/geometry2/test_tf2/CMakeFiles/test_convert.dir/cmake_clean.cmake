@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_convert.dir/test/test_convert.cpp.o"
-  "/home/dev/catkin_ws/devel/lib/test_tf2/test_convert.pdb"
-  "/home/dev/catkin_ws/devel/lib/test_tf2/test_convert"
+  "/home/nishq/catkin_ws/devel/lib/test_tf2/test_convert.pdb"
+  "/home/nishq/catkin_ws/devel/lib/test_tf2/test_convert"
 )
 
 # Per-language clean rules from dependency scanning.

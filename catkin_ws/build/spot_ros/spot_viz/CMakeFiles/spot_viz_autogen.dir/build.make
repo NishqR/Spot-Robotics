@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dev/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/nishq/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dev/catkin_ws/build
+CMAKE_BINARY_DIR = /home/nishq/catkin_ws/build
 
 # Utility rule file for spot_viz_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/dev/catkin_ws/build
 include spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir/progress.make
 
 spot_ros/spot_viz/CMakeFiles/spot_viz_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target spot_viz"
-	cd /home/dev/catkin_ws/build/spot_ros/spot_viz && /usr/bin/cmake -E cmake_autogen /home/dev/catkin_ws/build/spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir Release
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nishq/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target spot_viz"
+	cd /home/nishq/catkin_ws/build/spot_ros/spot_viz && /usr/bin/cmake -E cmake_autogen /home/nishq/catkin_ws/build/spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir Release
 
 spot_viz_autogen: spot_ros/spot_viz/CMakeFiles/spot_viz_autogen
 spot_viz_autogen: spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir/build.make
@@ -68,10 +68,10 @@ spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir/build: spot_viz_autogen
 .PHONY : spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir/build
 
 spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir/clean:
-	cd /home/dev/catkin_ws/build/spot_ros/spot_viz && $(CMAKE_COMMAND) -P CMakeFiles/spot_viz_autogen.dir/cmake_clean.cmake
+	cd /home/nishq/catkin_ws/build/spot_ros/spot_viz && $(CMAKE_COMMAND) -P CMakeFiles/spot_viz_autogen.dir/cmake_clean.cmake
 .PHONY : spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir/clean
 
 spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir/depend:
-	cd /home/dev/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev/catkin_ws/src /home/dev/catkin_ws/src/spot_ros/spot_viz /home/dev/catkin_ws/build /home/dev/catkin_ws/build/spot_ros/spot_viz /home/dev/catkin_ws/build/spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nishq/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nishq/catkin_ws/src /home/nishq/catkin_ws/src/spot_ros/spot_viz /home/nishq/catkin_ws/build /home/nishq/catkin_ws/build/spot_ros/spot_viz /home/nishq/catkin_ws/build/spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : spot_ros/spot_viz/CMakeFiles/spot_viz_autogen.dir/depend
 

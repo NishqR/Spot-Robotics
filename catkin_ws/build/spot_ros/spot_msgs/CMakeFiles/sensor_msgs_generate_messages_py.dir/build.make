@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dev/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/nishq/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dev/catkin_ws/build
+CMAKE_BINARY_DIR = /home/nishq/catkin_ws/build
 
 # Utility rule file for sensor_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/build: sensor
 .PHONY : spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 
 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
-	cd /home/dev/catkin_ws/build/spot_ros/spot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/nishq/catkin_ws/build/spot_ros/spot_msgs && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 
 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend:
-	cd /home/dev/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev/catkin_ws/src /home/dev/catkin_ws/src/spot_ros/spot_msgs /home/dev/catkin_ws/build /home/dev/catkin_ws/build/spot_ros/spot_msgs /home/dev/catkin_ws/build/spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nishq/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nishq/catkin_ws/src /home/nishq/catkin_ws/src/spot_ros/spot_msgs /home/nishq/catkin_ws/build /home/nishq/catkin_ws/build/spot_ros/spot_msgs /home/nishq/catkin_ws/build/spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
 

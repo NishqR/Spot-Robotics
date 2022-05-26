@@ -1,4 +1,4 @@
-prefix=/home/dev/catkin_ws/devel
+prefix=/home/nishq/catkin_ws/devel
 
 Name: test_tf2
 Description: Description of test_tf2

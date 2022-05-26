@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tf2_py.dir/src/tf2_py.cpp.o"
-  "/home/dev/catkin_ws/devel/lib/python3/dist-packages/tf2_py/_tf2.pdb"
-  "/home/dev/catkin_ws/devel/lib/python3/dist-packages/tf2_py/_tf2.so"
+  "/home/nishq/catkin_ws/devel/lib/python3/dist-packages/tf2_py/_tf2.pdb"
+  "/home/nishq/catkin_ws/devel/lib/python3/dist-packages/tf2_py/_tf2.so"
 )
 
 # Per-language clean rules from dependency scanning.

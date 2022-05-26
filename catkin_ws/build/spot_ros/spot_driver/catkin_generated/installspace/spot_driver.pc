@@ -1,4 +1,4 @@
-prefix=/home/dev/catkin_ws/install
+prefix=/home/nishq/catkin_ws/install
 
 Name: spot_driver
 Description: Description of spot_driver

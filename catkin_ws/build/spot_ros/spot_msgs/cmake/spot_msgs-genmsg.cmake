@@ -2,7 +2,7 @@
 
 message(STATUS "spot_msgs: 33 messages, 4 services")
 
-set(MSG_I_FLAGS "-Ispot_msgs:/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg;-Ispot_msgs:/home/dev/catkin_ws/devel/share/spot_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ispot_msgs:/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg;-Ispot_msgs:/home/nishq/catkin_ws/devel/share/spot_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,189 +17,189 @@ add_custom_target(spot_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" "std_msgs/Header:spot_msgs/BatteryState"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" "std_msgs/Header:spot_msgs/BatteryState"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" "std_msgs/Header:spot_msgs/EStopState"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" "spot_msgs/EStopState:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" "geometry_msgs/Point:spot_msgs/FootState"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" "geometry_msgs/Point:spot_msgs/FootState"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" "spot_msgs/Lease:spot_msgs/LeaseResource:spot_msgs/LeaseOwner"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" "spot_msgs/LeaseResource:spot_msgs/LeaseOwner:spot_msgs/Lease"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" ""
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" "geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" "geometry_msgs/Quaternion:geometry_msgs/Point:geometry_msgs/Pose"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" ""
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" "std_msgs/Header:spot_msgs/BehaviorFault"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" "spot_msgs/BehaviorFault:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" ""
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" "geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" "geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" ""
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" "spot_msgs/Lease:spot_msgs/LeaseOwner"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" "spot_msgs/LeaseOwner:spot_msgs/Lease"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" "spot_msgs/SystemFault:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" "spot_msgs/SystemFault:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" "spot_msgs/NavigateToResult:std_msgs/Header:spot_msgs/NavigateToActionFeedback:actionlib_msgs/GoalStatus:spot_msgs/NavigateToActionGoal:spot_msgs/NavigateToActionResult:actionlib_msgs/GoalID:spot_msgs/NavigateToGoal:spot_msgs/NavigateToFeedback"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" "spot_msgs/NavigateToResult:actionlib_msgs/GoalID:spot_msgs/NavigateToGoal:spot_msgs/NavigateToFeedback:spot_msgs/NavigateToActionFeedback:std_msgs/Header:spot_msgs/NavigateToActionGoal:actionlib_msgs/GoalStatus:spot_msgs/NavigateToActionResult"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" "spot_msgs/NavigateToGoal:std_msgs/Header:actionlib_msgs/GoalID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" "actionlib_msgs/GoalID:spot_msgs/NavigateToGoal:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" "actionlib_msgs/GoalStatus:spot_msgs/NavigateToResult:std_msgs/Header:actionlib_msgs/GoalID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" "actionlib_msgs/GoalID:spot_msgs/NavigateToResult:std_msgs/Header:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" "actionlib_msgs/GoalStatus:std_msgs/Header:spot_msgs/NavigateToFeedback:actionlib_msgs/GoalID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" "actionlib_msgs/GoalID:spot_msgs/NavigateToFeedback:std_msgs/Header:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" ""
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" "geometry_msgs/Pose:spot_msgs/TrajectoryActionFeedback:std_msgs/Header:geometry_msgs/PoseStamped:spot_msgs/TrajectoryResult:geometry_msgs/Quaternion:actionlib_msgs/GoalStatus:spot_msgs/TrajectoryFeedback:spot_msgs/TrajectoryActionGoal:actionlib_msgs/GoalID:spot_msgs/TrajectoryActionResult:std_msgs/Duration:geometry_msgs/Point:spot_msgs/TrajectoryGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" "spot_msgs/TrajectoryActionResult:geometry_msgs/Point:spot_msgs/TrajectoryFeedback:spot_msgs/TrajectoryResult:actionlib_msgs/GoalID:spot_msgs/TrajectoryGoal:spot_msgs/TrajectoryActionFeedback:geometry_msgs/PoseStamped:geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/Pose:actionlib_msgs/GoalStatus:spot_msgs/TrajectoryActionGoal:std_msgs/Duration"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" "geometry_msgs/Pose:std_msgs/Header:geometry_msgs/PoseStamped:geometry_msgs/Quaternion:actionlib_msgs/GoalID:std_msgs/Duration:geometry_msgs/Point:spot_msgs/TrajectoryGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" "geometry_msgs/Point:actionlib_msgs/GoalID:spot_msgs/TrajectoryGoal:geometry_msgs/PoseStamped:geometry_msgs/Quaternion:geometry_msgs/Pose:std_msgs/Header:std_msgs/Duration"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" "actionlib_msgs/GoalStatus:std_msgs/Header:spot_msgs/TrajectoryResult:actionlib_msgs/GoalID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" "actionlib_msgs/GoalID:spot_msgs/TrajectoryResult:std_msgs/Header:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" "actionlib_msgs/GoalStatus:std_msgs/Header:spot_msgs/TrajectoryFeedback:actionlib_msgs/GoalID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" "actionlib_msgs/GoalID:spot_msgs/TrajectoryFeedback:std_msgs/Header:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" "geometry_msgs/Pose:std_msgs/Header:geometry_msgs/PoseStamped:geometry_msgs/Quaternion:std_msgs/Duration:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" "geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/PoseStamped:geometry_msgs/Pose:std_msgs/Header:std_msgs/Duration"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" ""
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" ""
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" ""
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" "geometry_msgs/Twist:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" "geometry_msgs/Vector3:geometry_msgs/Twist"
 )
 
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" NAME_WE)
 add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "spot_msgs" "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" ""
 )
 
 #
@@ -209,199 +209,199 @@ add_custom_target(_spot_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_cpp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_cpp(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_cpp(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_cpp(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_cpp(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_cpp(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_cpp(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
@@ -409,25 +409,25 @@ _generate_msg_cpp(spot_msgs
 
 ### Generating Services
 _generate_srv_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_cpp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/spot_msgs
@@ -445,79 +445,79 @@ add_custom_target(spot_msgs_generate_messages_cpp
 add_dependencies(spot_msgs_generate_messages spot_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_cpp _spot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -530,199 +530,199 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS spot_msgs_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_eus(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_eus(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_eus(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_eus(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_eus(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_eus(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_eus(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
@@ -730,25 +730,25 @@ _generate_msg_eus(spot_msgs
 
 ### Generating Services
 _generate_srv_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_eus(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/spot_msgs
@@ -766,79 +766,79 @@ add_custom_target(spot_msgs_generate_messages_eus
 add_dependencies(spot_msgs_generate_messages spot_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_eus _spot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -851,199 +851,199 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS spot_msgs_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_lisp(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_lisp(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_lisp(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_lisp(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_lisp(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_lisp(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_lisp(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
@@ -1051,25 +1051,25 @@ _generate_msg_lisp(spot_msgs
 
 ### Generating Services
 _generate_srv_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_lisp(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/spot_msgs
@@ -1087,79 +1087,79 @@ add_custom_target(spot_msgs_generate_messages_lisp
 add_dependencies(spot_msgs_generate_messages spot_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_lisp _spot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1172,199 +1172,199 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS spot_msgs_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_nodejs(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_nodejs(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_nodejs(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_nodejs(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_nodejs(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_nodejs(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_nodejs(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
@@ -1372,25 +1372,25 @@ _generate_msg_nodejs(spot_msgs
 
 ### Generating Services
 _generate_srv_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_nodejs(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/spot_msgs
@@ -1408,79 +1408,79 @@ add_custom_target(spot_msgs_generate_messages_nodejs
 add_dependencies(spot_msgs_generate_messages spot_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_nodejs _spot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1493,199 +1493,199 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS spot_msgs_generate_messages_nodejs)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg;/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg;/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
-)
-_generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_msg_py(spot_msgs
-  "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg"
+  "${MSG_I_FLAGS}"
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_py(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_py(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_py(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_py(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Duration.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_py(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
+)
+_generate_msg_py(spot_msgs
+  "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
@@ -1693,25 +1693,25 @@ _generate_msg_py(spot_msgs
 
 ### Generating Services
 _generate_srv_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg"
+  "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
 )
 _generate_srv_py(spot_msgs
-  "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv"
+  "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/spot_msgs
@@ -1729,79 +1729,79 @@ add_custom_target(spot_msgs_generate_messages_py
 add_dependencies(spot_msgs_generate_messages spot_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFault.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootStateArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseArray.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseOwner.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Metrics.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/MobilityParams.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFault.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/WiFiState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BatteryState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/BehaviorFaultState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/EStopState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Feedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/FootState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/Lease.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/LeaseResource.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/PowerState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/msg/SystemFaultState.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToAction.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToActionFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/NavigateToFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryAction.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryActionFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryGoal.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryResult.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/devel/share/spot_msgs/msg/TrajectoryFeedback.msg" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ListGraph.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetLocomotion.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/SetVelocity.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/dev/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" NAME_WE)
+get_filename_component(_filename "/home/nishq/catkin_ws/src/spot_ros/spot_msgs/srv/ClearBehaviorFault.srv" NAME_WE)
 add_dependencies(spot_msgs_generate_messages_py _spot_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

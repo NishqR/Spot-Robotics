@@ -1,8 +1,8 @@
-# Install script for directory: /home/dev/catkin_ws/src/spot_ros/spot_description
+# Install script for directory: /home/nishq/catkin_ws/src/spot_ros/spot_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dev/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/nishq/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,29 +38,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dev/catkin_ws/build/spot_ros/spot_description/catkin_generated/installspace/spot_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nishq/catkin_ws/build/spot_ros/spot_description/catkin_generated/installspace/spot_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description/cmake" TYPE FILE FILES
-    "/home/dev/catkin_ws/build/spot_ros/spot_description/catkin_generated/installspace/spot_descriptionConfig.cmake"
-    "/home/dev/catkin_ws/build/spot_ros/spot_description/catkin_generated/installspace/spot_descriptionConfig-version.cmake"
+    "/home/nishq/catkin_ws/build/spot_ros/spot_description/catkin_generated/installspace/spot_descriptionConfig.cmake"
+    "/home/nishq/catkin_ws/build/spot_ros/spot_description/catkin_generated/installspace/spot_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE FILE FILES "/home/dev/catkin_ws/src/spot_ros/spot_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE FILE FILES "/home/nishq/catkin_ws/src/spot_ros/spot_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE DIRECTORY FILES "/home/dev/catkin_ws/src/spot_ros/spot_description/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE DIRECTORY FILES "/home/nishq/catkin_ws/src/spot_ros/spot_description/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE DIRECTORY FILES "/home/dev/catkin_ws/src/spot_ros/spot_description/urdf")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE DIRECTORY FILES "/home/nishq/catkin_ws/src/spot_ros/spot_description/urdf")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE DIRECTORY FILES "/home/dev/catkin_ws/src/spot_ros/spot_description/meshes")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_description" TYPE DIRECTORY FILES "/home/nishq/catkin_ws/src/spot_ros/spot_description/meshes")
 endif()
 

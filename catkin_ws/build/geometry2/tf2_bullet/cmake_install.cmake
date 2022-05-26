@@ -1,8 +1,8 @@
-# Install script for directory: /home/dev/catkin_ws/src/geometry2/tf2_bullet
+# Install script for directory: /home/nishq/catkin_ws/src/geometry2/tf2_bullet
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dev/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/nishq/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dev/catkin_ws/build/geometry2/tf2_bullet/catkin_generated/installspace/tf2_bullet.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nishq/catkin_ws/build/geometry2/tf2_bullet/catkin_generated/installspace/tf2_bullet.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tf2_bullet/cmake" TYPE FILE FILES
-    "/home/dev/catkin_ws/build/geometry2/tf2_bullet/catkin_generated/installspace/tf2_bulletConfig.cmake"
-    "/home/dev/catkin_ws/build/geometry2/tf2_bullet/catkin_generated/installspace/tf2_bulletConfig-version.cmake"
+    "/home/nishq/catkin_ws/build/geometry2/tf2_bullet/catkin_generated/installspace/tf2_bulletConfig.cmake"
+    "/home/nishq/catkin_ws/build/geometry2/tf2_bullet/catkin_generated/installspace/tf2_bulletConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tf2_bullet" TYPE FILE FILES "/home/dev/catkin_ws/src/geometry2/tf2_bullet/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tf2_bullet" TYPE FILE FILES "/home/nishq/catkin_ws/src/geometry2/tf2_bullet/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/tf2_bullet" TYPE DIRECTORY FILES "/home/dev/catkin_ws/src/geometry2/tf2_bullet/include/tf2_bullet/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/tf2_bullet" TYPE DIRECTORY FILES "/home/nishq/catkin_ws/src/geometry2/tf2_bullet/include/tf2_bullet/")
 endif()
 

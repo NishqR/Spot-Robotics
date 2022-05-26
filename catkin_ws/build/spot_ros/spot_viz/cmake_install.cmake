@@ -1,8 +1,8 @@
-# Install script for directory: /home/dev/catkin_ws/src/spot_ros/spot_viz
+# Install script for directory: /home/nishq/catkin_ws/src/spot_ros/spot_viz
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dev/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/nishq/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dev/catkin_ws/build/spot_ros/spot_viz/catkin_generated/installspace/spot_viz.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nishq/catkin_ws/build/spot_ros/spot_viz/catkin_generated/installspace/spot_viz.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_viz/cmake" TYPE FILE FILES
-    "/home/dev/catkin_ws/build/spot_ros/spot_viz/catkin_generated/installspace/spot_vizConfig.cmake"
-    "/home/dev/catkin_ws/build/spot_ros/spot_viz/catkin_generated/installspace/spot_vizConfig-version.cmake"
+    "/home/nishq/catkin_ws/build/spot_ros/spot_viz/catkin_generated/installspace/spot_vizConfig.cmake"
+    "/home/nishq/catkin_ws/build/spot_ros/spot_viz/catkin_generated/installspace/spot_vizConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_viz" TYPE FILE FILES "/home/dev/catkin_ws/src/spot_ros/spot_viz/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_viz" TYPE FILE FILES "/home/nishq/catkin_ws/src/spot_ros/spot_viz/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,12 +59,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspot_viz.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/dev/catkin_ws/devel/lib/libspot_viz.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/nishq/catkin_ws/devel/lib/libspot_viz.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspot_viz.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspot_viz.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspot_viz.so"
-         OLD_RPATH "/home/dev/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
+         OLD_RPATH "/home/nishq/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libspot_viz.so")
@@ -73,14 +73,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_viz" TYPE DIRECTORY FILES "/home/dev/catkin_ws/src/spot_ros/spot_viz/rviz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_viz" TYPE DIRECTORY FILES "/home/nishq/catkin_ws/src/spot_ros/spot_viz/rviz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_viz" TYPE DIRECTORY FILES "/home/dev/catkin_ws/src/spot_ros/spot_viz/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_viz" TYPE DIRECTORY FILES "/home/nishq/catkin_ws/src/spot_ros/spot_viz/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_viz" TYPE FILE FILES "/home/dev/catkin_ws/src/spot_ros/spot_viz/plugin_description.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_viz" TYPE FILE FILES "/home/nishq/catkin_ws/src/spot_ros/spot_viz/plugin_description.xml")
 endif()
 

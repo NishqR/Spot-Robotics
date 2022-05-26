@@ -1,8 +1,8 @@
-# Install script for directory: /home/dev/catkin_ws/src/init_test
+# Install script for directory: /home/nishq/catkin_ws/src/init_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dev/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/nishq/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dev/catkin_ws/build/init_test/catkin_generated/installspace/init_test.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nishq/catkin_ws/build/init_test/catkin_generated/installspace/init_test.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/init_test/cmake" TYPE FILE FILES
-    "/home/dev/catkin_ws/build/init_test/catkin_generated/installspace/init_testConfig.cmake"
-    "/home/dev/catkin_ws/build/init_test/catkin_generated/installspace/init_testConfig-version.cmake"
+    "/home/nishq/catkin_ws/build/init_test/catkin_generated/installspace/init_testConfig.cmake"
+    "/home/nishq/catkin_ws/build/init_test/catkin_generated/installspace/init_testConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/init_test" TYPE FILE FILES "/home/dev/catkin_ws/src/init_test/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/init_test" TYPE FILE FILES "/home/nishq/catkin_ws/src/init_test/package.xml")
 endif()
 

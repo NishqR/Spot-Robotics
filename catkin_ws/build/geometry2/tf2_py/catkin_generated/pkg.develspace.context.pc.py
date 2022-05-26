@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "rospy;tf2".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "tf2_py"
-PROJECT_SPACE_DIR = "/home/dev/catkin_ws/devel"
+PROJECT_SPACE_DIR = "/home/nishq/catkin_ws/devel"
 PROJECT_VERSION = "0.6.5"

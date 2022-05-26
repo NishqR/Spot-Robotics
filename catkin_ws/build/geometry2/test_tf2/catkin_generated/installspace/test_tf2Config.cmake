@@ -67,14 +67,14 @@ set(test_tf2_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(test_tf2_SOURCE_PREFIX /home/dev/catkin_ws/src/geometry2/test_tf2)
-  set(test_tf2_DEVEL_PREFIX /home/dev/catkin_ws/devel)
+  set(test_tf2_SOURCE_PREFIX /home/nishq/catkin_ws/src/geometry2/test_tf2)
+  set(test_tf2_DEVEL_PREFIX /home/nishq/catkin_ws/devel)
   set(test_tf2_INSTALL_PREFIX "")
   set(test_tf2_PREFIX ${test_tf2_DEVEL_PREFIX})
 else()
   set(test_tf2_SOURCE_PREFIX "")
   set(test_tf2_DEVEL_PREFIX "")
-  set(test_tf2_INSTALL_PREFIX /home/dev/catkin_ws/install)
+  set(test_tf2_INSTALL_PREFIX /home/nishq/catkin_ws/install)
   set(test_tf2_PREFIX ${test_tf2_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/dev/catkin_ws/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/nishq/catkin_ws/install/lib;/home/nishq/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

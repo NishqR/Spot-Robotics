@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dev/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/nishq/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dev/catkin_ws/build
+CMAKE_BINARY_DIR = /home/nishq/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include spot_ros/spot_viz/CMakeFiles/spot_viz.dir/depend.make
@@ -58,17 +58,17 @@ include spot_ros/spot_viz/CMakeFiles/spot_viz.dir/progress.make
 include spot_ros/spot_viz/CMakeFiles/spot_viz.dir/flags.make
 
 spot_ros/spot_viz/CMakeFiles/spot_viz.dir/src/spot_panel.cpp.o: spot_ros/spot_viz/CMakeFiles/spot_viz.dir/flags.make
-spot_ros/spot_viz/CMakeFiles/spot_viz.dir/src/spot_panel.cpp.o: /home/dev/catkin_ws/src/spot_ros/spot_viz/src/spot_panel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object spot_ros/spot_viz/CMakeFiles/spot_viz.dir/src/spot_panel.cpp.o"
-	cd /home/dev/catkin_ws/build/spot_ros/spot_viz && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spot_viz.dir/src/spot_panel.cpp.o -c /home/dev/catkin_ws/src/spot_ros/spot_viz/src/spot_panel.cpp
+spot_ros/spot_viz/CMakeFiles/spot_viz.dir/src/spot_panel.cpp.o: /home/nishq/catkin_ws/src/spot_ros/spot_viz/src/spot_panel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nishq/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object spot_ros/spot_viz/CMakeFiles/spot_viz.dir/src/spot_panel.cpp.o"
+	cd /home/nishq/catkin_ws/build/spot_ros/spot_viz && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spot_viz.dir/src/spot_panel.cpp.o -c /home/nishq/catkin_ws/src/spot_ros/spot_viz/src/spot_panel.cpp
 
 spot_ros/spot_viz/CMakeFiles/spot_viz.dir/src/spot_panel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spot_viz.dir/src/spot_panel.cpp.i"
-	cd /home/dev/catkin_ws/build/spot_ros/spot_viz && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/catkin_ws/src/spot_ros/spot_viz/src/spot_panel.cpp > CMakeFiles/spot_viz.dir/src/spot_panel.cpp.i
+	cd /home/nishq/catkin_ws/build/spot_ros/spot_viz && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nishq/catkin_ws/src/spot_ros/spot_viz/src/spot_panel.cpp > CMakeFiles/spot_viz.dir/src/spot_panel.cpp.i
 
 spot_ros/spot_viz/CMakeFiles/spot_viz.dir/src/spot_panel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spot_viz.dir/src/spot_panel.cpp.s"
-	cd /home/dev/catkin_ws/build/spot_ros/spot_viz && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/catkin_ws/src/spot_ros/spot_viz/src/spot_panel.cpp -o CMakeFiles/spot_viz.dir/src/spot_panel.cpp.s
+	cd /home/nishq/catkin_ws/build/spot_ros/spot_viz && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nishq/catkin_ws/src/spot_ros/spot_viz/src/spot_panel.cpp -o CMakeFiles/spot_viz.dir/src/spot_panel.cpp.s
 
 spot_ros/spot_viz/CMakeFiles/spot_viz.dir/src/spot_panel.cpp.o.requires:
 
@@ -83,16 +83,16 @@ spot_ros/spot_viz/CMakeFiles/spot_viz.dir/src/spot_panel.cpp.o.provides.build: s
 
 spot_ros/spot_viz/CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.o: spot_ros/spot_viz/CMakeFiles/spot_viz.dir/flags.make
 spot_ros/spot_viz/CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.o: spot_ros/spot_viz/spot_viz_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object spot_ros/spot_viz/CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.o"
-	cd /home/dev/catkin_ws/build/spot_ros/spot_viz && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.o -c /home/dev/catkin_ws/build/spot_ros/spot_viz/spot_viz_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nishq/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object spot_ros/spot_viz/CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.o"
+	cd /home/nishq/catkin_ws/build/spot_ros/spot_viz && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.o -c /home/nishq/catkin_ws/build/spot_ros/spot_viz/spot_viz_autogen/mocs_compilation.cpp
 
 spot_ros/spot_viz/CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.i"
-	cd /home/dev/catkin_ws/build/spot_ros/spot_viz && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev/catkin_ws/build/spot_ros/spot_viz/spot_viz_autogen/mocs_compilation.cpp > CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.i
+	cd /home/nishq/catkin_ws/build/spot_ros/spot_viz && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nishq/catkin_ws/build/spot_ros/spot_viz/spot_viz_autogen/mocs_compilation.cpp > CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.i
 
 spot_ros/spot_viz/CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.s"
-	cd /home/dev/catkin_ws/build/spot_ros/spot_viz && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev/catkin_ws/build/spot_ros/spot_viz/spot_viz_autogen/mocs_compilation.cpp -o CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.s
+	cd /home/nishq/catkin_ws/build/spot_ros/spot_viz && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nishq/catkin_ws/build/spot_ros/spot_viz/spot_viz_autogen/mocs_compilation.cpp -o CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.s
 
 spot_ros/spot_viz/CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.o.requires:
 
@@ -113,78 +113,78 @@ spot_viz_OBJECTS = \
 # External object files for target spot_viz
 spot_viz_EXTERNAL_OBJECTS =
 
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: spot_ros/spot_viz/CMakeFiles/spot_viz.dir/src/spot_panel.cpp.o
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: spot_ros/spot_viz/CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.o
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: spot_ros/spot_viz/CMakeFiles/spot_viz.dir/build.make
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libQt5UiTools.a
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librviz.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libOgreOverlay.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libGL.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libGLU.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libimage_transport.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libinteractive_markers.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/liblaser_geometry.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libresource_retriever.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libtf.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /home/dev/catkin_ws/devel/lib/libtf2_ros.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libmessage_filters.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /home/dev/catkin_ws/devel/lib/libtf2.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/liburdf.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libclass_loader.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/libPocoFoundation.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libroslib.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librospack.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librosconsole_bridge.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libactionlib.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libroscpp.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librosconsole.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librostime.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librostime.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/dev/catkin_ws/devel/lib/libspot_viz.so: spot_ros/spot_viz/CMakeFiles/spot_viz.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/dev/catkin_ws/devel/lib/libspot_viz.so"
-	cd /home/dev/catkin_ws/build/spot_ros/spot_viz && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/spot_viz.dir/link.txt --verbose=$(VERBOSE)
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: spot_ros/spot_viz/CMakeFiles/spot_viz.dir/src/spot_panel.cpp.o
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: spot_ros/spot_viz/CMakeFiles/spot_viz.dir/spot_viz_autogen/mocs_compilation.cpp.o
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: spot_ros/spot_viz/CMakeFiles/spot_viz.dir/build.make
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libQt5UiTools.a
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librviz.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libGL.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libGLU.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libimage_transport.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libinteractive_markers.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/liblaser_geometry.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libresource_retriever.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libtf.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /home/nishq/catkin_ws/devel/lib/libtf2_ros.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libmessage_filters.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /home/nishq/catkin_ws/devel/lib/libtf2.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/liburdf.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libclass_loader.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/libPocoFoundation.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libroslib.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librospack.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librosconsole_bridge.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libactionlib.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libroscpp.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librosconsole.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librostime.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/librostime.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/nishq/catkin_ws/devel/lib/libspot_viz.so: spot_ros/spot_viz/CMakeFiles/spot_viz.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nishq/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/nishq/catkin_ws/devel/lib/libspot_viz.so"
+	cd /home/nishq/catkin_ws/build/spot_ros/spot_viz && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/spot_viz.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-spot_ros/spot_viz/CMakeFiles/spot_viz.dir/build: /home/dev/catkin_ws/devel/lib/libspot_viz.so
+spot_ros/spot_viz/CMakeFiles/spot_viz.dir/build: /home/nishq/catkin_ws/devel/lib/libspot_viz.so
 
 .PHONY : spot_ros/spot_viz/CMakeFiles/spot_viz.dir/build
 
@@ -194,10 +194,10 @@ spot_ros/spot_viz/CMakeFiles/spot_viz.dir/requires: spot_ros/spot_viz/CMakeFiles
 .PHONY : spot_ros/spot_viz/CMakeFiles/spot_viz.dir/requires
 
 spot_ros/spot_viz/CMakeFiles/spot_viz.dir/clean:
-	cd /home/dev/catkin_ws/build/spot_ros/spot_viz && $(CMAKE_COMMAND) -P CMakeFiles/spot_viz.dir/cmake_clean.cmake
+	cd /home/nishq/catkin_ws/build/spot_ros/spot_viz && $(CMAKE_COMMAND) -P CMakeFiles/spot_viz.dir/cmake_clean.cmake
 .PHONY : spot_ros/spot_viz/CMakeFiles/spot_viz.dir/clean
 
 spot_ros/spot_viz/CMakeFiles/spot_viz.dir/depend:
-	cd /home/dev/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev/catkin_ws/src /home/dev/catkin_ws/src/spot_ros/spot_viz /home/dev/catkin_ws/build /home/dev/catkin_ws/build/spot_ros/spot_viz /home/dev/catkin_ws/build/spot_ros/spot_viz/CMakeFiles/spot_viz.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nishq/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nishq/catkin_ws/src /home/nishq/catkin_ws/src/spot_ros/spot_viz /home/nishq/catkin_ws/build /home/nishq/catkin_ws/build/spot_ros/spot_viz /home/nishq/catkin_ws/build/spot_ros/spot_viz/CMakeFiles/spot_viz.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : spot_ros/spot_viz/CMakeFiles/spot_viz.dir/depend
 

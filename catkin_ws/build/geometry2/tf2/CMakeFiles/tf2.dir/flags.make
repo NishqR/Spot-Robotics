@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG -fPIC
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dtf2_EXPORTS
 
-CXX_INCLUDES = -I/home/dev/catkin_ws/src/geometry2/tf2/src/bt -I/home/dev/catkin_ws/src/geometry2/tf2/include -I/home/dev/catkin_ws/devel/include -I/home/dev/catkin_ws/src/geometry2/tf2_msgs/include -I/opt/ros/melodic/include 
+CXX_INCLUDES = -I/home/nishq/catkin_ws/src/geometry2/tf2/src/bt -I/home/nishq/catkin_ws/src/geometry2/tf2/include -I/home/nishq/catkin_ws/devel/include -I/home/nishq/catkin_ws/src/geometry2/tf2_msgs/include -I/opt/ros/melodic/include 
 

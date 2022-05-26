@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dev/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/nishq/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dev/catkin_ws/build
+CMAKE_BINARY_DIR = /home/nishq/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dev/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dev/catkin_ws/build/CMakeFiles /home/dev/catkin_ws/build/spot_ros/spot_msgs/CMakeFiles/progress.marks
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/catkin_ws/build/CMakeFiles 0
+	cd /home/nishq/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nishq/catkin_ws/build/CMakeFiles /home/nishq/catkin_ws/build/spot_ros/spot_msgs/CMakeFiles/progress.marks
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nishq/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/clean
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/preinstall
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/preinstall
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dev/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nishq/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_MobilityParams.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_MobilityParams.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_MobilityParams.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_MobilityParams.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ _spot_msgs_generate_messages_check_deps_MobilityParams: spot_ros/spot_msgs/CMake
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_MobilityParams/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_MobilityParams.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_MobilityParams.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_MobilityParams.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_MobilityParams.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_MobilityParams/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ _spot_msgs_generate_messages_check_deps_SystemFault: spot_ros/spot_msgs/CMakeFil
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_SystemFault/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFault.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_SystemFault/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToGoal.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToGoal.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToGoal.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToGoal.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ _spot_msgs_generate_messages_check_deps_NavigateToGoal: spot_ros/spot_msgs/CMake
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_NavigateToGoal/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToGoal.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToGoal.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_NavigateToGoal/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ _spot_msgs_generate_messages_check_deps_LeaseOwner: spot_ros/spot_msgs/CMakeFile
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_LeaseOwner/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseOwner.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_LeaseOwner/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_PowerState.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_PowerState.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_PowerState.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_PowerState.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ _spot_msgs_generate_messages_check_deps_PowerState: spot_ros/spot_msgs/CMakeFile
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_PowerState/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_PowerState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_PowerState.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_PowerState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_PowerState.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_PowerState/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ _spot_msgs_generate_messages_check_deps_BehaviorFault: spot_ros/spot_msgs/CMakeF
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_BehaviorFault/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFault.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFault/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ _spot_msgs_generate_messages_check_deps_LeaseArray: spot_ros/spot_msgs/CMakeFile
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_LeaseArray/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseArray.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_LeaseArray/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ spot_msgs_generate_messages: spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_me
 
 # fast build rule for target.
 spot_msgs_generate_messages/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages.dir/build
 .PHONY : spot_msgs_generate_messages/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ _spot_msgs_generate_messages_check_deps_BehaviorFaultState: spot_ros/spot_msgs/C
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_BehaviorFaultState/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BehaviorFaultState.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_BehaviorFaultState/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ rosgraph_msgs_generate_messages_eus: spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ rosgraph_msgs_generate_messages_cpp: spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ roscpp_generate_messages_py: spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messa
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_py.dir/build.make spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_py.dir/build.make spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryResult.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryResult.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryResult.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryResult.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ _spot_msgs_generate_messages_check_deps_TrajectoryResult: spot_ros/spot_msgs/CMa
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_TrajectoryResult/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryResult.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryResult.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryResult.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryResult.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryResult/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ spot_msgs_generate_messages_py: spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate
 
 # fast build rule for target.
 spot_msgs_generate_messages_py/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_py.dir/build
 .PHONY : spot_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ rosgraph_msgs_generate_messages_py: spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ roscpp_generate_messages_eus: spot_ros/spot_msgs/CMakeFiles/roscpp_generate_mess
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ _spot_msgs_generate_messages_check_deps_WiFiState: spot_ros/spot_msgs/CMakeFiles
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_WiFiState/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_WiFiState.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_WiFiState/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ roscpp_generate_messages_nodejs: spot_ros/spot_msgs/CMakeFiles/roscpp_generate_m
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ sensor_msgs_generate_messages_py: spot_ros/spot_msgs/CMakeFiles/sensor_msgs_gene
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ nav_msgs_generate_messages_py: spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_m
 
 # fast build rule for target.
 nav_msgs_generate_messages_py/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 .PHONY : nav_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ _spot_msgs_generate_messages_check_deps_LeaseResource: spot_ros/spot_msgs/CMakeF
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_LeaseResource/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_LeaseResource.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_LeaseResource/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ roscpp_generate_messages_lisp: spot_ros/spot_msgs/CMakeFiles/roscpp_generate_mes
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -509,12 +509,12 @@ nav_msgs_generate_messages_lisp: spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate
 
 # fast build rule for target.
 nav_msgs_generate_messages_lisp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
 .PHONY : nav_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/rule
 
 # Convenience name for target.
@@ -524,12 +524,12 @@ _spot_msgs_generate_messages_check_deps_Metrics: spot_ros/spot_msgs/CMakeFiles/_
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_Metrics/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Metrics.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_Metrics/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -539,12 +539,12 @@ sensor_msgs_generate_messages_cpp: spot_ros/spot_msgs/CMakeFiles/sensor_msgs_gen
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToResult.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToResult.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToResult.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToResult.dir/rule
 
 # Convenience name for target.
@@ -554,12 +554,12 @@ _spot_msgs_generate_messages_check_deps_NavigateToResult: spot_ros/spot_msgs/CMa
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_NavigateToResult/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToResult.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToResult.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToResult.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToResult.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_NavigateToResult/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -569,12 +569,12 @@ sensor_msgs_generate_messages_eus: spot_ros/spot_msgs/CMakeFiles/sensor_msgs_gen
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -584,12 +584,12 @@ roscpp_generate_messages_cpp: spot_ros/spot_msgs/CMakeFiles/roscpp_generate_mess
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -599,12 +599,12 @@ sensor_msgs_generate_messages_nodejs: spot_ros/spot_msgs/CMakeFiles/sensor_msgs_
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/rule
 
 # Convenience name for target.
@@ -614,12 +614,12 @@ _spot_msgs_generate_messages_check_deps_SystemFaultState: spot_ros/spot_msgs/CMa
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_SystemFaultState/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SystemFaultState.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_SystemFaultState/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetVelocity.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetVelocity.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetVelocity.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetVelocity.dir/rule
 
 # Convenience name for target.
@@ -629,12 +629,12 @@ _spot_msgs_generate_messages_check_deps_SetVelocity: spot_ros/spot_msgs/CMakeFil
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_SetVelocity/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetVelocity.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetVelocity.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetVelocity.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetVelocity.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_SetVelocity/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -644,12 +644,12 @@ actionlib_generate_messages_cpp: spot_ros/spot_msgs/CMakeFiles/actionlib_generat
 
 # fast build rule for target.
 actionlib_generate_messages_cpp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_cpp.dir/build
 .PHONY : actionlib_generate_messages_cpp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -659,12 +659,12 @@ actionlib_generate_messages_nodejs: spot_ros/spot_msgs/CMakeFiles/actionlib_gene
 
 # fast build rule for target.
 actionlib_generate_messages_nodejs/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
 .PHONY : actionlib_generate_messages_nodejs/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -674,12 +674,12 @@ nav_msgs_generate_messages_nodejs: spot_ros/spot_msgs/CMakeFiles/nav_msgs_genera
 
 # fast build rule for target.
 nav_msgs_generate_messages_nodejs/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
 .PHONY : nav_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/rule
 
 # Convenience name for target.
@@ -689,12 +689,12 @@ _spot_msgs_generate_messages_check_deps_FootStateArray: spot_ros/spot_msgs/CMake
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_FootStateArray/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootStateArray.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_FootStateArray/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -704,12 +704,12 @@ nav_msgs_generate_messages_eus: spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_
 
 # fast build rule for target.
 nav_msgs_generate_messages_eus/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
 .PHONY : nav_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -719,12 +719,12 @@ nav_msgs_generate_messages_cpp: spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_
 
 # fast build rule for target.
 nav_msgs_generate_messages_cpp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 .PHONY : nav_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -734,12 +734,12 @@ sensor_msgs_generate_messages_lisp: spot_ros/spot_msgs/CMakeFiles/sensor_msgs_ge
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -749,12 +749,12 @@ spot_msgs_gennodejs: spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/rule
 
 # fast build rule for target.
 spot_msgs_gennodejs/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_gennodejs.dir/build
 .PHONY : spot_msgs_gennodejs/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopStateArray.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopStateArray.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopStateArray.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopStateArray.dir/rule
 
 # Convenience name for target.
@@ -764,12 +764,12 @@ _spot_msgs_generate_messages_check_deps_EStopStateArray: spot_ros/spot_msgs/CMak
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_EStopStateArray/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopStateArray.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopStateArray.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopStateArray.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopStateArray.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_EStopStateArray/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_eus.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -779,12 +779,12 @@ actionlib_generate_messages_eus: spot_ros/spot_msgs/CMakeFiles/actionlib_generat
 
 # fast build rule for target.
 actionlib_generate_messages_eus/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_eus.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_eus.dir/build
 .PHONY : actionlib_generate_messages_eus/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -794,12 +794,12 @@ spot_msgs_generate_messages_lisp: spot_ros/spot_msgs/CMakeFiles/spot_msgs_genera
 
 # fast build rule for target.
 spot_msgs_generate_messages_lisp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_lisp.dir/build
 .PHONY : spot_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -809,12 +809,12 @@ rosgraph_msgs_generate_messages_lisp: spot_ros/spot_msgs/CMakeFiles/rosgraph_msg
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal.dir/rule
 
 # Convenience name for target.
@@ -824,12 +824,12 @@ _spot_msgs_generate_messages_check_deps_TrajectoryActionGoal: spot_ros/spot_msgs
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_TrajectoryActionGoal/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionGoal.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryActionGoal/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -839,12 +839,12 @@ actionlib_generate_messages_lisp: spot_ros/spot_msgs/CMakeFiles/actionlib_genera
 
 # fast build rule for target.
 actionlib_generate_messages_lisp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_lisp.dir/build
 .PHONY : actionlib_generate_messages_lisp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/rule
 
 # Convenience name for target.
@@ -854,12 +854,12 @@ _spot_msgs_generate_messages_check_deps_TrajectoryAction: spot_ros/spot_msgs/CMa
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_TrajectoryAction/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryAction.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryAction/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionResult.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionResult.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionResult.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionResult.dir/rule
 
 # Convenience name for target.
@@ -869,12 +869,12 @@ _spot_msgs_generate_messages_check_deps_TrajectoryActionResult: spot_ros/spot_ms
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_TrajectoryActionResult/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionResult.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionResult.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionResult.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionResult.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryActionResult/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_py.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_py.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_py.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -884,12 +884,12 @@ actionlib_generate_messages_py: spot_ros/spot_msgs/CMakeFiles/actionlib_generate
 
 # fast build rule for target.
 actionlib_generate_messages_py/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_py.dir/build.make spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_py.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_py.dir/build.make spot_ros/spot_msgs/CMakeFiles/actionlib_generate_messages_py.dir/build
 .PHONY : actionlib_generate_messages_py/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryState.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryState.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryState.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryState.dir/rule
 
 # Convenience name for target.
@@ -899,12 +899,12 @@ _spot_msgs_generate_messages_check_deps_BatteryState: spot_ros/spot_msgs/CMakeFi
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_BatteryState/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryState.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryState.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_BatteryState/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/rule
 
 # Convenience name for target.
@@ -914,12 +914,12 @@ _spot_msgs_generate_messages_check_deps_EStopState: spot_ros/spot_msgs/CMakeFile
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_EStopState/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_EStopState.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_EStopState/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToAction.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToAction.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToAction.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToAction.dir/rule
 
 # Convenience name for target.
@@ -929,12 +929,12 @@ _spot_msgs_generate_messages_check_deps_NavigateToAction: spot_ros/spot_msgs/CMa
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_NavigateToAction/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToAction.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToAction.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToAction.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToAction.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_NavigateToAction/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Feedback.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Feedback.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Feedback.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Feedback.dir/rule
 
 # Convenience name for target.
@@ -944,12 +944,12 @@ _spot_msgs_generate_messages_check_deps_Feedback: spot_ros/spot_msgs/CMakeFiles/
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_Feedback/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Feedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Feedback.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Feedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Feedback.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_Feedback/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/rule
 
 # Convenience name for target.
@@ -959,12 +959,12 @@ _spot_msgs_generate_messages_check_deps_FootState: spot_ros/spot_msgs/CMakeFiles
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_FootState/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_FootState.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_FootState/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/rule
 
 # Convenience name for target.
@@ -974,12 +974,12 @@ _spot_msgs_generate_messages_check_deps_Lease: spot_ros/spot_msgs/CMakeFiles/_sp
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_Lease/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_Lease.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_Lease/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/rule
 
 # Convenience name for target.
@@ -989,12 +989,12 @@ _spot_msgs_generate_messages_check_deps_NavigateToActionGoal: spot_ros/spot_msgs
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_NavigateToActionGoal/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionGoal.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_NavigateToActionGoal/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionResult.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionResult.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionResult.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionResult.dir/rule
 
 # Convenience name for target.
@@ -1004,12 +1004,12 @@ _spot_msgs_generate_messages_check_deps_NavigateToActionResult: spot_ros/spot_ms
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_NavigateToActionResult/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionResult.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionResult.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionResult.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionResult.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_NavigateToActionResult/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionFeedback.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionFeedback.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionFeedback.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionFeedback.dir/rule
 
 # Convenience name for target.
@@ -1019,12 +1019,12 @@ _spot_msgs_generate_messages_check_deps_NavigateToActionFeedback: spot_ros/spot_
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_NavigateToActionFeedback/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionFeedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionFeedback.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionFeedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToActionFeedback.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_NavigateToActionFeedback/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToFeedback.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToFeedback.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToFeedback.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToFeedback.dir/rule
 
 # Convenience name for target.
@@ -1034,12 +1034,12 @@ _spot_msgs_generate_messages_check_deps_NavigateToFeedback: spot_ros/spot_msgs/C
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_NavigateToFeedback/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToFeedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToFeedback.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToFeedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_NavigateToFeedback.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_NavigateToFeedback/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback.dir/rule
 
 # Convenience name for target.
@@ -1049,12 +1049,12 @@ _spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback: spot_ros/spot_
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryActionFeedback/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryGoal.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryGoal.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryGoal.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryGoal.dir/rule
 
 # Convenience name for target.
@@ -1064,12 +1064,12 @@ _spot_msgs_generate_messages_check_deps_TrajectoryGoal: spot_ros/spot_msgs/CMake
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_TrajectoryGoal/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryGoal.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryGoal.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryGoal.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryGoal/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1079,12 +1079,12 @@ rosgraph_msgs_generate_messages_nodejs: spot_ros/spot_msgs/CMakeFiles/rosgraph_m
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryFeedback.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryFeedback.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryFeedback.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryFeedback.dir/rule
 
 # Convenience name for target.
@@ -1094,12 +1094,12 @@ _spot_msgs_generate_messages_check_deps_TrajectoryFeedback: spot_ros/spot_msgs/C
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_TrajectoryFeedback/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryFeedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryFeedback.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryFeedback.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_TrajectoryFeedback.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_TrajectoryFeedback/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/rule
 
 # Convenience name for target.
@@ -1109,12 +1109,12 @@ _spot_msgs_generate_messages_check_deps_BatteryStateArray: spot_ros/spot_msgs/CM
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_BatteryStateArray/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_BatteryStateArray.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_BatteryStateArray/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ListGraph.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ListGraph.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ListGraph.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ListGraph.dir/rule
 
 # Convenience name for target.
@@ -1124,12 +1124,12 @@ _spot_msgs_generate_messages_check_deps_ListGraph: spot_ros/spot_msgs/CMakeFiles
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_ListGraph/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ListGraph.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ListGraph.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ListGraph.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ListGraph.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_ListGraph/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/rule
 
 # Convenience name for target.
@@ -1139,12 +1139,12 @@ _spot_msgs_generate_messages_check_deps_SetLocomotion: spot_ros/spot_msgs/CMakeF
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_SetLocomotion/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_SetLocomotion.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_SetLocomotion/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ClearBehaviorFault.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ClearBehaviorFault.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ClearBehaviorFault.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ClearBehaviorFault.dir/rule
 
 # Convenience name for target.
@@ -1154,12 +1154,12 @@ _spot_msgs_generate_messages_check_deps_ClearBehaviorFault: spot_ros/spot_msgs/C
 
 # fast build rule for target.
 _spot_msgs_generate_messages_check_deps_ClearBehaviorFault/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ClearBehaviorFault.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ClearBehaviorFault.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ClearBehaviorFault.dir/build.make spot_ros/spot_msgs/CMakeFiles/_spot_msgs_generate_messages_check_deps_ClearBehaviorFault.dir/build
 .PHONY : _spot_msgs_generate_messages_check_deps_ClearBehaviorFault/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1169,12 +1169,12 @@ spot_msgs_generate_messages_cpp: spot_ros/spot_msgs/CMakeFiles/spot_msgs_generat
 
 # fast build rule for target.
 spot_msgs_generate_messages_cpp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_cpp.dir/build
 .PHONY : spot_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/rule
 
 # Convenience name for target.
@@ -1184,12 +1184,12 @@ spot_msgs_gencpp: spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/rule
 
 # fast build rule for target.
 spot_msgs_gencpp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_gencpp.dir/build
 .PHONY : spot_msgs_gencpp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1199,12 +1199,12 @@ spot_msgs_generate_messages_eus: spot_ros/spot_msgs/CMakeFiles/spot_msgs_generat
 
 # fast build rule for target.
 spot_msgs_generate_messages_eus/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_eus.dir/build
 .PHONY : spot_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_geneus.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_geneus.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_geneus.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_geneus.dir/rule
 
 # Convenience name for target.
@@ -1214,12 +1214,12 @@ spot_msgs_geneus: spot_ros/spot_msgs/CMakeFiles/spot_msgs_geneus.dir/rule
 
 # fast build rule for target.
 spot_msgs_geneus/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_geneus.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_geneus.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_geneus.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_geneus.dir/build
 .PHONY : spot_msgs_geneus/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/rule
 
 # Convenience name for target.
@@ -1229,12 +1229,12 @@ spot_msgs_genpy: spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/rule
 
 # fast build rule for target.
 spot_msgs_genpy/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_genpy.dir/build
 .PHONY : spot_msgs_genpy/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/rule
 
 # Convenience name for target.
@@ -1244,12 +1244,12 @@ spot_msgs_genlisp: spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/rule
 
 # fast build rule for target.
 spot_msgs_genlisp/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_genlisp.dir/build
 .PHONY : spot_msgs_genlisp/fast
 
 # Convenience name for target.
 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/rule
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/rule
 .PHONY : spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1259,7 +1259,7 @@ spot_msgs_generate_messages_nodejs: spot_ros/spot_msgs/CMakeFiles/spot_msgs_gene
 
 # fast build rule for target.
 spot_msgs_generate_messages_nodejs/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/build
+	cd /home/nishq/catkin_ws/build && $(MAKE) -f spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/build.make spot_ros/spot_msgs/CMakeFiles/spot_msgs_generate_messages_nodejs.dir/build
 .PHONY : spot_msgs_generate_messages_nodejs/fast
 
 # Help Target
@@ -1359,6 +1359,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dev/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nishq/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

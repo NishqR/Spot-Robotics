@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tf2_ros_test_time_reset.dir/test/time_reset_test.cpp.o"
-  "/home/dev/catkin_ws/devel/lib/tf2_ros/tf2_ros_test_time_reset.pdb"
-  "/home/dev/catkin_ws/devel/lib/tf2_ros/tf2_ros_test_time_reset"
+  "/home/nishq/catkin_ws/devel/lib/tf2_ros/tf2_ros_test_time_reset.pdb"
+  "/home/nishq/catkin_ws/devel/lib/tf2_ros/tf2_ros_test_time_reset"
 )
 
 # Per-language clean rules from dependency scanning.

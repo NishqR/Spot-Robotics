@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include;/opt/ros/melodic/share/oroc
 PROJECT_CATKIN_DEPENDS = "geometry_msgs;tf2_ros;tf2".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "/opt/ros/melodic/lib/liborocos-kdl.so;/opt/ros/melodic/lib/liborocos-kdl.so.1.4.0".split(';') if "/opt/ros/melodic/lib/liborocos-kdl.so;/opt/ros/melodic/lib/liborocos-kdl.so.1.4.0" != "" else []
 PROJECT_NAME = "tf2_geometry_msgs"
-PROJECT_SPACE_DIR = "/home/dev/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/nishq/catkin_ws/install"
 PROJECT_VERSION = "0.6.5"
